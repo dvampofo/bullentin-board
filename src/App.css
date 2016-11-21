@@ -36,6 +36,7 @@ div.note {
 		cursor: -webkit-grab;
 		-webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
 		box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+		/*resize: both;*/
 }
 
 div.note:active {
@@ -55,7 +56,7 @@ div.note:hover > span {
 div.note > span {
 		position: absolute;
 		bottom: 2px;
-		right: 2px;
+		right: 10px;
 		opacity: 0;
 		transition: opacity .25s linear;
 }

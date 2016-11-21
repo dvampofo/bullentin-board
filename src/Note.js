@@ -11,7 +11,9 @@ var Note = React.createClass({
 		// set notes to appear randomly on screen
 		this.style = {
 			right: this.randomBetween(0, window.innerWidth - 150, 'px'),
-			top: this.randomBetween(0, window.innerWidth - 150, 'px')
+			top: this.randomBetween(0, window.innerWidth - 150, 'px'),
+			resize: 'both',
+      overflow: 'auto',
 		}
 	},
 	componentDidUpdate(){
@@ -64,7 +66,7 @@ var Note = React.createClass({
 	render () {
 		 return (<Draggable>
 							 {(this.state.editing) ? this.renderForm() : this.renderDisplay()}
-						 </Draggable>)
+			</Draggable>)
 		}
 })
 
